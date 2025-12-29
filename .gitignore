@@ -17,6 +17,7 @@ npm-debug.log*
 
 # Build output
 build/*.txt
+.next/
 
 # Environment variables
 .env
