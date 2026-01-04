@@ -1230,7 +1230,7 @@ This emergency scope still proves the core concept: structured data collection e
 
 **Draft Auto-Save:**
 - **NFR33:** Widget draft data is auto-saved periodically (every 30-60 seconds) or per-tab
-- **NFR34:** Loss of draft data due to browser crash is acceptable (user re-enters)
+- **NFR34:** Zero data loss tolerance - Draft data must be persisted reliably to prevent any data loss due to browser crash, network interruption, or system failure
 
 **Acceptable Downtime:**
 - **NFR35:** System downtime for deployments or maintenance is acceptable during off-hours
@@ -1292,3 +1292,8 @@ This emergency scope still proves the core concept: structured data collection e
 - **NFR55:** Browser DevTools provide sufficient debugging capability (no advanced monitoring required for MVP)
 - **NFR56:** Manual testing during development is acceptable (no CI/CD pipeline required for MVP)
 - **NFR57:** Performance issues are investigated reactively based on user reports (no proactive monitoring)
+
+**Offline Capability (Critical for Expert Field Work):**
+- **NFR58:** Experts must have 100% widget functionality while offline (no internet connection required for data entry)
+- **NFR59:** System implements Service Worker + IndexedDB for offline persistence with automatic background synchronization when connectivity is restored
+- **NFR60:** Offline mode provides clear visual indication of connection status and sync queue visibility to users
